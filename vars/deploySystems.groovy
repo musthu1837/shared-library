@@ -7,7 +7,7 @@ def mavenDeploy(Map file) {
 def nodeDeploy() {
  sh "set -x"
  sh "npm start & sleep 1"
- sh "echo $! > .pidfile"
+ sh "echo \$! > .pidfile"
  sh "set +x"
  sh "echo 'Now...'"
  sh "echo 'Visit http://localhost:3000 to see your Node.js/React application in action.'"
