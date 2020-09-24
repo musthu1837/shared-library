@@ -1,4 +1,4 @@
-def call(Map file) {
+def mavenDeploy(Map file) {
  
  sh "sudo cp ${ file.war } /opt/tomcatwebapps/"
 
