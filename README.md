@@ -1,2 +1,2 @@
-# jenkins-shared-library-structure
+# shared-library
 A template structure for Jenkins Shared Library
