@@ -1,6 +1,6 @@
 def mavenDeploy(Map file) {
- 
- sh "sudo cp ${ file.war } /opt/tomcatwebapps/"
+ sh "sudo rm -rf /opt/tomcat/webapps/${file.war}"
+ sh "sudo cp ${file.war} /opt/tomcat/webapps/"
 
 }
 return this
